@@ -29,31 +29,31 @@ var equal = () => {
     var num2;
     if (expression.charAt(0) != "-") {
       if (expression.includes("+")) {
-        num1 = expression.split("+")[0]
-        num2 = expression.split("+")[1]
-        result = parseInt(num1) + parseInt(num2)
+        num1 = expression.split("+")[0];
+        num2 = expression.split("+")[1];
+        result = parseInt(num1) + parseInt(num2);
       }
       if (expression.includes("-")) {
-        num1 = expression.split("-")[0]
-        num2 = expression.split("-")[1]
-        result = parseInt(num1) - parseInt(num2)
+        num1 = expression.split("-")[0];
+        num2 = expression.split("-")[1];
+        result = parseInt(num1) - parseInt(num2);
       }
       if (expression.includes("*")) {
-        num1 = expression.split("*")[0]
-        num2 = expression.split("*")[1]
-        result = parseInt(num1) * parseInt(num2)
+        num1 = expression.split("*")[0];
+        num2 = expression.split("*")[1];
+        result = parseInt(num1) * parseInt(num2);
       }
       if (expression.includes("/")) {
-        num1 = expression.split("/")[0]
-        num2 = expression.split("/")[1]
-        result = parseInt(num1) / parseInt(num2)
+        num1 = expression.split("/")[0];
+        num2 = expression.split("/")[1];
+        result = parseInt(num1) / parseInt(num2);
       }
       if (expression.includes("%")) {
-        num1 = expression.split("%")[0]
-        num2 = expression.split("%")[1]
-        result = parseInt(num1) % parseInt(num2)
+        num1 = expression.split("%")[0];
+        num2 = expression.split("%")[1];
+        result = parseInt(num1) % parseInt(num2);
       }
-      input.textContent = (isNaN(result)) ? "" : result
+      input.textContent = (isNaN(result)) ? "" : result;
     }
   }
   if (
@@ -69,37 +69,37 @@ var equal = () => {
     var num2;
     if (input.textContent.charAt(0) == "-") {
       if (expression.includes("+")) {
-        num1 = -Math.abs(expression.split("+")[0])
-        num2 = expression.split("+")[1]
-        result = parseInt(num1) + parseInt(num2)
+        num1 = -Math.abs(expression.split("+")[0]);
+        num2 = expression.split("+")[1];
+        result = parseInt(num1) + parseInt(num2);
       }
       if (expression.includes("-")) {
-        num1 = -Math.abs(expression.split("-")[0])
-        num2 = expression.split("-")[1]
-        result = parseInt(num1) - parseInt(num2)
+        num1 = -Math.abs(expression.split("-")[0]);
+        num2 = expression.split("-")[1];
+        result = parseInt(num1) - parseInt(num2);
       }
       if (expression.includes("*")) {
-        num1 = -Math.abs(expression.split("*")[0])
-        num2 = expression.split("*")[1]
-        result = parseInt(num1) * parseInt(num2)
+        num1 = -Math.abs(expression.split("*")[0]);
+        num2 = expression.split("*")[1];
+        result = parseInt(num1) * parseInt(num2);
       }
       if (expression.includes("/")) {
-        num1 = -Math.abs(expression.split("/")[0])
-        num2 = expression.split("/")[1]
-        result = parseInt(num1) / parseInt(num2)
+        num1 = -Math.abs(expression.split("/")[0]);
+        num2 = expression.split("/")[1];
+        result = parseInt(num1) / parseInt(num2);
       }
       if (expression.includes("%")) {
-        num1 = -Math.abs(expression.split("%")[0])
-        num2 = expression.split("%")[1]
-        result = parseInt(num1) % parseInt(num2)
+        num1 = -Math.abs(expression.split("%")[0]);
+        num2 = expression.split("%")[1];
+        result = parseInt(num1) % parseInt(num2);
       }
-      input.textContent = (isNaN(result)) ? "" : result
+      input.textContent = (isNaN(result)) ? "" : result;
     }
   }
 }
 
 var clean = () => {
-  input.textContent = ""
+  input.textContent = "";
 }
 
 var backspace = () => {
@@ -115,57 +115,57 @@ numbers.forEach((btn) => {
 
 operators.forEach((btn) => {
   btn.addEventListener('click', () => {
-    equal()
+    equal();
   })
 })
 
 sub_operator.addEventListener('click', () => {
-  input.textContent += sub_operator.value
+  input.textContent += sub_operator.value;
 })
 
 dot.addEventListener('click', () => {
   if (input.textContent.length == 0) {
-    return
+    return;
   } else {
-    input.textContent += dot.value
+    input.textContent += dot.value;
   }
 })
 
 sum_operator.addEventListener('click', () => {
   if (input.textContent.length == 0) {
-    return
+    return;
   } else {
-    input.textContent += sum_operator.value
+    input.textContent += sum_operator.value;
   }
 })
 
 div_operator.addEventListener('click', () => {
   if (input.textContent.length == 0) {
-    return
+    return;
   } else {
-    input.textContent += div_operator.value
+    input.textContent += div_operator.value;
   }
 })
 
 mul_operator.addEventListener('click', () => {
   if (input.textContent.length == 0) {
-    return
+    return;
   } else {
-    input.textContent += mul_operator.value
+    input.textContent += mul_operator.value;
   }
 })
 
 mod_operator.addEventListener('click', () => {
   if (input.textContent.length == 0) {
-    return
+    return;
   } else {
-    input.textContent += mod_operator.value
+    input.textContent += mod_operator.value;
   }
 })
 
 //Dau "="
 equal_operator.addEventListener('click', () => {
-  equal()
+  equal();
 })
 
 //Xoa tat ca
