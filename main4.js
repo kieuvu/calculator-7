@@ -163,19 +163,16 @@ mod_operator.addEventListener('click', () => {
   }
 })
 
-//Dau "="
 equal_operator.addEventListener('click', () => {
   equal();
 })
 
-//Xoa tat ca
 clean_btn.forEach((btn) => {
   btn.addEventListener('click', () => {
     clean();
   })
 })
 
-//Backspace
 backspace_btn.addEventListener('click', () => {
   backspace();
 })
