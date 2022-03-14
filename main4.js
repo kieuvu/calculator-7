@@ -124,7 +124,7 @@ sub_operator.addEventListener('click', () => {
 })
 
 dot.addEventListener('click', () => {
-  if (input.textContent.length == 0) {
+  if (input.textContent.length == 0 || input.includes('.')) {
     return;
   } else {
     input.textContent += dot.value;
